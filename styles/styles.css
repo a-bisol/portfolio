@@ -1,0 +1,51 @@
+/* Element changes */
+
+body {
+    background-color: #A75AFF !important;
+}
+
+nav {
+    background-color: #E8D7F1;
+}
+
+/* ID changes */
+
+#intro {
+    padding-top:3.5rem;
+}
+
+#pfp {
+    margin:0.5rem;
+}
+
+#aboutMe {
+    background-color: #A75AFF;
+}
+
+#projects {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #A75AFF;
+}
+
+/* ID>Class changes */
+
+#projects .card {
+    border-color: #087E8B;
+    background-color: #D3BCCC;
+}
+
+#projects .card-header {
+    background-color: #0BAFC1;
+    border-color: #087E8B;
+}
+
+#projects .card-footer {
+    background-color: #0BAFC1;
+    border-color: #087E8B;
+}
+
+#contact .col {
+    background-color: #A75AFF;
+    border: 1px solid #881FFF;
+}
