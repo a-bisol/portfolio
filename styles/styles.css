@@ -1,11 +1,21 @@
+/* Pallette:
+#DDBFFF - Main BG
+#E9D6FF - Nav BG - Shade up from main
+#43008F - Border colour - 15 Shades down from main
+
+#0BAFC1 - Card header/footer colour
+#076974 - Card border colour - 4 shades down from header/footer
+#D3BCCC - Card body colour
+ */
+
 /* Element changes */
 
 body {
-    background-color: #A75AFF !important;
+    background-color: #DDBFFF !important; /* Main BG colour */
 }
 
 nav {
-    background-color: #E8D7F1;
+    background-color: #E9D6FF;
 }
 
 /* ID changes */
@@ -19,33 +29,33 @@ nav {
 }
 
 #aboutMe {
-    background-color: #A75AFF;
+    background-color: #DDBFFF;
 }
 
 #projects {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #A75AFF;
+    background-color: #DDBFFF;
 }
 
 /* ID>Class changes */
 
 #projects .card {
-    border-color: #087E8B;
+    border-color: #076974;
     background-color: #D3BCCC;
 }
 
 #projects .card-header {
     background-color: #0BAFC1;
-    border-color: #087E8B;
+    border-color: #076974;
 }
 
 #projects .card-footer {
     background-color: #0BAFC1;
-    border-color: #087E8B;
+    border-color: #076974;
 }
 
 #contact .col {
-    background-color: #A75AFF;
-    border: 1px solid #881FFF;
+    background-color: #DDBFFF;
+    border: 1px solid #43008F;
 }
