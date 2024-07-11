@@ -71,7 +71,7 @@
             </div>
             <div class="card-body">
                 <p class="card-text">
-                    An autonomous scalable system to allow operators to remotely locate a given target using one or
+                    An autonomous scalable system to allow operators to remotely locate a given target using one to
                     multiple DJI drones.
                 </p>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#droneModal">
@@ -80,20 +80,69 @@
             </div>
         </div>
 
-        <div class="modal fade" id="droneModal" tabindex="-1" role="dialog" aria-labelledby="droneModal"
+        <div class="modal fade text-start" id="droneModal" tabindex="-1" role="dialog" aria-labelledby="droneModal"
              aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="droneModalTitle">Search and Rescue Drone</h5>
+                        <h4 class="modal-title" id="droneModalTitle">Search and Rescue Drone</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <!--TODO
-                        Fill info-->
+                        <p>The Search and Rescue Drone system is a fully automated and integrated system to allow
+                            operators to search for a selected target.</p>
+                        The system consists of three major components:
+                        <ul>
+                            <li>The Base PC</li>
+                            <li>The Mobile Device</li>
+                            <li>The DJI Drone</li>
+                        </ul>
+                        <h5>The Base PC</h5>
+                        <p>The central webserver running on the client's PC allows the primary operator to have full
+                            control of the operation. Upon initialization all mobile controllers are paired with the
+                            webserver, where the operator assigns each drone a name and a flight level. The parameters
+                            of the search (radial search distance and target object) are then entered by the operator.
+                            The server calculates the optimal path for each connected drone and relays the path to the
+                            corresponding mobile device.<br><br>
+
+                            Once operation is underway, the mobile devices relay all relevant images back to the central
+                            server, running them through another object detection scan before showing them to the
+                            operator to confirm or deny if the image matches the target. If the target is confirmed, a
+                            message is sent to all mobile devices, instructing them to path their drones to observe the
+                            detected target.
+                        </p>
+                        <h5>The Mobile Device</h5>
+                        <p>
+                            The drone RC app is the key part of the system as it allows for constant communication
+                            between the central webserver and a connected drone. Upon initialization, the mobile
+                            operator initiates a handshake with the central server to ensure communication is
+                            established. Once the takeoff signal is sent by the central server, the mobile operator's
+                            role is to ensure legal compliance as well as manually land the drone if the situation calls
+                            for it.<br><br>
+
+                            As the drone follows the pre-determined route, stills of the camera feed are continually
+                            sent to the mobile device. These stills are then processed through an object detection
+                            algorithm to scan for potential matches to the target. If any potential matches are
+                            detected, a crop of the detection is sent back to the webserver for further analysis.
+                        </p>
+                        <h5>The DJI Drone</h5>
+                        <p>For development purposes, the <a href="https://www.dji.com/ca/mini-3" target="_blank">DJI
+                            Mini 3</a> was used, due to its implementation of the DJI Mobile SDKv5 as well as the
+                            relatively low cost. Any DJI drone that supports the MSDKv5 is supported by the system with
+                            minimal required adjustments.
+                        </p>
+
+                        <h5>Technologies Used:</h5>
+                        <ul>
+                            <li>Base PC - HTML, CSS, Python, Flask, OpenCV, YOLOv5</li>
+                            <li>Mobile Device - Android Studio, Kotlin, Jetpack Compose, TFLite, DJI MSDK</li>
+                        </ul>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <p>
+                            Please contact me if you'd like to check out either repo!
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -106,7 +155,7 @@
             </div>
             <div class="card-body">
                 <p class="card-text">
-                    YAP
+                    An Android application to aid school children who struggle with dyscalculia.
                 </p>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ADDvantageModal">
                     See more details!
@@ -114,19 +163,34 @@
             </div>
         </div>
 
-        <div class="modal fade" id="ADDvantageModal" tabindex="-1" role="dialog" aria-labelledby="ADDvantageModal"
+        <div class="modal fade text-start" id="ADDvantageModal" tabindex="-1" role="dialog"
+             aria-labelledby="ADDvantageModal"
              aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="ADDvantageModalTitle">ADDvantage</h5>
+                        <h4 class="modal-title" id="ADDvantageModalTitle">ADDvantage</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <!--TODO
-                        Fill info-->
+                        ADDvantage is a teaching aid that aims to assist children who struggle with dyscalculia.
+                        Dyscalculia can impact the ability to visualize and perceive mathematical problems such as
+                        addition of items, counting change, or reading an analog clock. It can be treated pretty simply,
+                        especially if caught early on, with repeated familiarization of numbers to the inflicted person.<br><br>
+
+                        ADDvantage helps in this regard by letting users input their grade level, as well as selecting
+                        any potential areas they may struggle with specifically. Questions relevant to their grade are
+                        then shown and the users are silently marked on their progress. User scores and areas of
+                        struggle can then be shown to a teacher or parent to help figure out a more individualized
+                        treatment plan.
+
+                        <h5>Technologies Used:</h5>
+                        <ul>
+                            <li>Kotlin, Android Studio, Jetpack Compose</li>
+                        </ul>
                     </div>
                     <div class="modal-footer">
+                        Please contact me if you'd like to check out the repo!
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -153,7 +217,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="dropTempModalTitle">dropTemp</h5>
+                        <h4 class="modal-title" id="dropTempModalTitle">dropTemp</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -187,7 +251,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="venueMenuModalTitle">Venue Menu</h5>
+                        <h4 class="modal-title" id="venueMenuModalTitle">Venue Menu</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -221,7 +285,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="pyHideModalTitle">PyHide</h5>
+                        <h4 class="modal-title" id="pyHideModalTitle">PyHide</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -256,7 +320,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="scriptographModalTitle">scriptograph</h5>
+                        <h4 class="modal-title" id="scriptographModalTitle">scriptograph</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -290,7 +354,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="wordpressModalTitle">WordPress for Android</h5>
+                        <h4 class="modal-title" id="wordpressModalTitle">WordPress for Android</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -324,7 +388,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="webstoreModalTitle">Ontario Tech University WiT Webstore</h5>
+                        <h4 class="modal-title" id="webstoreModalTitle">Ontario Tech University WiT Webstore</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -359,7 +423,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="evergreenModalTitle">evergreen</h5>
+                        <h4 class="modal-title" id="evergreenModalTitle">evergreen</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -393,7 +457,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="calendarModalTitle">Social Calendar</h5>
+                        <h4 class="modal-title" id="calendarModalTitle">Social Calendar</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
