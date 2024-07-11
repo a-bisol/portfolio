@@ -61,158 +61,352 @@
     </div>
     <hr>
 </div>
-<div class="card-group card-group-scroll mx-3 my-2" id="projects">
+<div class="container-fluid text-center" id="project">
+    <div class="card-group card-group-scroll mx-3 my-2" id="projects">
 
-    <div class="card text-center">
-        <div class="card-header">
-            Search and Rescue Drone - Android Application
+        <!--Search and Rescue Drone-->
+        <div class="card text-center">
+            <div class="card-header">
+                Search and Rescue Drone
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    An autonomous scalable system to allow operators to remotely locate a given target using one or
+                    multiple DJI drones.
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#droneModal">
+                    See more details!
+                </button>
+            </div>
         </div>
-        <div class="card-body">
-            <p class="card-text">
-                Client application for an autonomous search and rescue drone system. Interfaces with DJI's drone mobile
-                SDK to provide automated routing while capturing footage. The footage is then processed through an
-                on-board Machine Learning model to detect viable targets. Communicates with a central control PC to
-                transmit data back and forth.
-            </p>
-            <a href="https://github.com/EmilyGoose/CapstoneDrone/" class="btn btn-primary" target="_blank">Check it out
-                on
-                GitHub</a>
-        </div>
-        <div class="card-footer">
-            Built with: Kotlin, Jetpack Compose, DJI SDK, TfLite
-        </div>
-    </div>
 
-    <div class="card text-center">
-        <div class="card-header">
-            Search and Rescue Drone - Server Application
+        <div class="modal fade" id="droneModal" tabindex="-1" role="dialog" aria-labelledby="droneModal"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="droneModalTitle">Search and Rescue Drone</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--TODO
+                        Fill info-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-            <p class="card-text">
-                Server application for an autonomous search and rescue drone system. Uses websockets to interface with
-                client application to transmit flight paths and receive footage for further target identification.
-                Server operator can control a multitude of connected to drones while manually filtering through detected
-                potential matches.
-            </p>
-            <a href="https://github.com/DanielKamel2001/CapstoneDroneServer" class="btn btn-primary" target="_blank">Check it out
-                on
-                GitHub</a>
-        </div>
-        <div class="card-footer">
-            Built with: HTML, Flask, OpenCV, YOLOv5
-        </div>
-    </div>
 
-    <div class="card text-center">
-        <div class="card-header">
-            dropTemp
+        <!--ADDvantage-->
+        <div class="card text-center">
+            <div class="card-header">
+                ADDvantage
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    YAP
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ADDvantageModal">
+                    See more details!
+                </button>
+            </div>
         </div>
-        <div class="card-body">
-            <p class="card-text">An IoT solution to remotely monitor temperature and humidity readings using an Arduino
-                and Raspberry Pi.</p>
-            <a href="https://github.com/manreett/dropTemp" class="btn btn-primary" target="_blank">Check it out on
-                GitHub</a>
-        </div>
-        <div class="card-footer">
-            Built with: Python, Arduino, LAMP Stack, Node-RED
-        </div>
-    </div>
-    <div class="card text-center">
-        <div class="card-header">
-            VenueMenu
-        </div>
-        <div class="card-body">
-            <p class="card-text">Android application that allows users to follow nearby venues to easily view upcoming
-                events.</p>
-            <a href="https://github.com/EmilyGoose/SOFE4640_Final" class="btn btn-primary" target="_blank">Check it out
-                on GitHub</a>
-        </div>
-        <div class="card-footer">
-            Built with: Android Studio, Kotlin, Firebase
-        </div>
-    </div>
-    <div class="card text-center">
-        <div class="card-header">
-            PyHide
-        </div>
-        <div class="card-body">
-            <p class="card-text">Lightweight Python application to encode or decode messages within images using various
-                cryptographic methods.</p>
-            <a href="https://github.com/a-bisol/SOFE48480_Group11" class="btn btn-primary" target="_blank">Check it out
-                on GitHub</a>
-        </div>
-        <div class="card-footer">
-            Built with: Python
-        </div>
-    </div>
-    <div class="card text-center">
-        <div class="card-header">
-            scriptograph
-        </div>
-        <div class="card-body">
-            <p class="card-text">A machine learning model that attempts to recognize a user's handwriting from an
-                uploaded image.</p>
-            <a href="https://drive.google.com/drive/folders/1IxHZVD_-t45VMu0xJXHvMv_vBh5upfnV?usp=drive_link"
-               class="btn btn-primary" target="_blank">Check it out on Google Drive</a>
-        </div>
-        <div class="card-footer">
-            Built with: Python, Keras, NumPy
-        </div>
-    </div>
 
-    <div class="card text-center">
-        <div class="card-header">
-            WordPress for Android
+        <div class="modal fade" id="ADDvantageModal" tabindex="-1" role="dialog" aria-labelledby="ADDvantageModal"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ADDvantageModalTitle">ADDvantage</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--TODO
+                        Fill info-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-            <p class="card-text">Unified page/post functionality in the app for my first contribution to
-                OSS.</p>
-            <a href="https://github.com/EmilyGoose/WordPress-Android" class="btn btn-primary" target="_blank">View our
-                GitHub
-                branch</a>
+
+        <!--dropTemp-->
+        <div class="card text-center">
+            <div class="card-header">
+                dropTemp
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    YAP
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dropTempModal">
+                    See more details!
+                </button>
+            </div>
         </div>
-        <div class="card-footer">
-            Built with: Android Studio, Java, Kotlin, JUnit5
+
+        <div class="modal fade" id="dropTempModal" tabindex="-1" role="dialog" aria-labelledby="dropTempModal"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="dropTempModalTitle">dropTemp</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--TODO
+                        Fill info-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="card text-center">
-        <div class="card-header">
-            OTU WiT Webstore - 1<sup>st</sup> place OTU Hackathon 2022
+
+        <!--VenueMenu-->
+        <div class="card text-center">
+            <div class="card-header">
+                VenueMenu
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    YAP
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#venueMenuModal">
+                    See more details!
+                </button>
+            </div>
         </div>
-        <div class="card-body">
-            <p class="card-text">A mockup model webstore for Ontario Tech's Women in IT.</p>
-            <a href="https://github.com/DanielKamel2001/OT-Hackathon-22" class="btn btn-primary"
-               target="_blank">Check it out on GitHub</a>
+
+        <div class="modal fade" id="venueMenuModal" tabindex="-1" role="dialog" aria-labelledby="venueMenuModal"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="venueMenuModalTitle">Venue Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--TODO
+                        Fill info-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-footer">
-            Built with: HTML, CSS, Bootstrap 5, Flask
+
+        <!--PyHide-->
+        <div class="card text-center">
+            <div class="card-header">
+                PyHide
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    YAP
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pyHideModal">
+                    See more details!
+                </button>
+            </div>
         </div>
-    </div>
-    <div class="card text-center">
-        <div class="card-header">
-            evergreen - UofTHacks IX
+
+        <div class="modal fade" id="pyHideModal" tabindex="-1" role="dialog" aria-labelledby="pyHideModal"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="pyHideModalTitle">PyHide</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--TODO
+                        Fill info-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-            <p class="card-text">An Android application which visually recognized user owned plants.</p>
-            <a href="https://devpost.com/software/plant-app" class="btn btn-primary" target="_blank">See our
-                Devpost</a>
+
+        <!--scriptograph-->
+        <div class="card text-center">
+            <div class="card-header">
+                scriptograph
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    YAP
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#scriptographModal">
+                    See more details!
+                </button>
+            </div>
         </div>
-        <div class="card-footer">
-            Built with: Android Studio, Kotlin
+
+        <div class="modal fade" id="scriptographModal" tabindex="-1" role="dialog" aria-labelledby="scriptographModal"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="scriptographModalTitle">scriptograph</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--TODO
+                        Fill info-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="card text-center">
-        <div class="card-header">
-            Social Calendar
+
+        <!--WordPress for Android-->
+        <div class="card text-center">
+            <div class="card-header">
+                WordPress for Android
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    YAP
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wordpressModal">
+                    See more details!
+                </button>
+            </div>
         </div>
-        <div class="card-body">
-            <p class="card-text">An Electron application to save and share events with your contacts.</p>
-            <a href="https://github.com/SOFE2720/Social-Calendar-Group-12" class="btn btn-primary"
-               target="_blank">Check it out on GitHub</a>
+
+        <div class="modal fade" id="wordpressModal" tabindex="-1" role="dialog" aria-labelledby="wordpressModal"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="wordpressModalTitle">WordPress for Android</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--TODO
+                        Fill info-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-footer">
-            Built with: Electron, FastAPI, PostgreSQL
+
+        <!--OTU WiT Webstore-->
+        <div class="card text-center">
+            <div class="card-header">
+                Ontario Tech University WiT Webstore
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    YAP
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#webstoreModal">
+                    See more details!
+                </button>
+            </div>
         </div>
+
+        <div class="modal fade" id="webstoreModal" tabindex="-1" role="dialog" aria-labelledby="webstoreModal"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="webstoreModalTitle">Ontario Tech University WiT Webstore</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--TODO
+                        Fill info-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--evergreen-->
+        <div class="card text-center">
+            <div class="card-header">
+                evergreen
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    YAP
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#evergreenModal">
+                    See more details!
+                </button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="evergreenModal" tabindex="-1" role="dialog" aria-labelledby="evergreenModal"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="evergreenModalTitle">evergreen</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--TODO
+                        Fill info-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Social Calendar-->
+        <div class="card text-center">
+            <div class="card-header">
+                Social Calendar
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    YAP
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#calendarModal">
+                    See more details!
+                </button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="calendarModal"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="calendarModalTitle">Social Calendar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--TODO
+                        Fill info-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 <div class="container-fluid text-center" id="contact">
